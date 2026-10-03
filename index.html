@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pranjal Raj | AI/ML Engineer & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--fg:#fff;--mut:#8e9099;--line:#1f2024;--card:#101114;--ac:#9aa8ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f4f2;--fg:#0a0a0c;--mut:#666872;--line:#dcdcd8;--card:#fff;--ac:#4a58d6}}
+:root[data-theme="light"]{--bg:#f4f4f2;--fg:#0a0a0c;--mut:#666872;--line:#dcdcd8;--card:#fff;--ac:#4a58d6}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:Inter,"Helvetica Neue",Arial,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.w{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(14px)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}
+nav ul{display:flex;gap:30px;list-style:none;padding:0;font-size:15px;color:var(--mut)}nav ul a:hover{color:var(--fg)}
+.pill{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:10px 20px;font-size:15px;transition:.3s}
+.pill:hover{border-color:var(--fg)}
+.hero{padding:clamp(40px,7vw,90px) 0 clamp(50px,8vw,100px)}
+.hero .w{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.avail{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:12px 20px;font-size:15px;margin-bottom:44px}
+.avail:before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 #3ddc84;animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{0%,100%{background:#fff;box-shadow:0 0 0 0 #3ddc8400}50%{background:#3ddc84;box-shadow:0 0 10px 3px #3ddc84aa}}
+h1{font-size:clamp(36px,5.2vw,68px);line-height:1.08;letter-spacing:-.045em;font-weight:300}
+h1 b{font-weight:800}
+.lead{max-width:48ch;margin:34px 0 44px;color:var(--mut);font-size:17px}.lead b{color:var(--fg);font-weight:500}
+.cta{display:inline-flex;align-items:center;gap:18px;background:#fff;color:#000;border:0;border-radius:99px;padding:10px 32px 10px 10px;font-weight:500;font-size:17px;box-shadow:0 0 40px #ffffff22;transition:transform .3s}
+.cta:hover{transform:translateY(-3px)}
+.cta i{width:44px;height:44px;border-radius:50%;background:#e9e9ec;display:grid;place-items:center;font-style:normal;transition:transform .3s}
+.cta:hover i{transform:translateX(4px)}
+.stack{position:relative;height:clamp(280px,38vw,430px);perspective:1400px}
+.sc{position:absolute;inset:0;margin:auto;width:78%;height:62%;border-radius:20px;background:var(--card);border:1px solid var(--line);padding:18px;box-shadow:0 30px 60px #0008;transition:transform .5s cubic-bezier(.2,.7,.2,1);font-size:12px;color:var(--mut);overflow:hidden}
+.stack{--rx:0deg;--ry:0deg}
+.sc:nth-child(1){transform:rotateX(calc(14deg + var(--rx))) rotateY(calc(-18deg + var(--ry))) rotateZ(5deg) translate(34px,-46px)}
+.sc:nth-child(2){transform:rotateX(calc(14deg + var(--rx))) rotateY(calc(-18deg + var(--ry))) rotateZ(5deg) translate(-4px,0)}
+.sc:nth-child(3){transform:rotateX(calc(14deg + var(--rx))) rotateY(calc(-18deg + var(--ry))) rotateZ(5deg) translate(-42px,46px)}
+.sc h4{color:var(--fg);font-size:15px;font-weight:500;margin-bottom:12px}
+.bar{height:8px;border-radius:9px;background:var(--line);margin:9px 0;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}
+.bub{border-radius:12px;background:var(--line);padding:8px 12px;margin:7px 0;width:78%;color:var(--fg)}.bub.r{margin-left:auto;background:var(--ac);color:#000}
+.big{font-size:34px;font-weight:800;color:var(--fg);letter-spacing:-.03em}
+.strip{border-top:1px solid var(--line);background:color-mix(in srgb,var(--card) 60%,transparent)}
+.strip .w{display:flex;align-items:center;gap:36px;height:96px}
+.rate{white-space:nowrap;font-size:14px;color:var(--mut);padding-right:36px;border-right:1px solid var(--line)}.rate span{color:var(--fg);letter-spacing:3px}
+.mq{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq div{display:inline-flex;gap:56px;white-space:nowrap;animation:m 26s linear infinite;font-weight:500;color:var(--mut)}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:clamp(70px,10vw,120px) 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(30px,4.6vw,56px);letter-spacing:-.04em;font-weight:300;line-height:1.08;margin-bottom:48px;max-width:20ch}h2 b{font-weight:800}
+.row{display:grid;grid-template-columns:1fr 1.5fr auto;gap:24px;align-items:baseline;padding:32px 0;border-top:1px solid var(--line);transition:padding .4s,color .3s}
+.row:last-child{border-bottom:1px solid var(--line)}.row:hover{padding-left:18px;color:var(--ac)}
+.row h3{font-size:clamp(22px,3vw,34px);font-weight:500;letter-spacing:-.03em}.row small{display:block;color:var(--mut);font-size:15px;margin-top:4px;font-weight:300}
+.row p{color:var(--fg);opacity:.75;font-size:16px}.row em{font-style:normal;color:var(--mut);font-size:14px;text-align:right;max-width:200px}
+.g{display:grid;grid-template-columns:repeat(2,1fr)}.g div{padding:30px 30px 30px 0;border-top:1px solid var(--line)}.g h3{font-size:24px;font-weight:500;margin-bottom:8px;letter-spacing:-.02em}.g p{color:var(--mut)}
+.edu{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;border-top:1px solid var(--line);padding:30px 0}.edu p{color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chips span{border:1px solid var(--line);border-radius:99px;padding:8px 18px;font-size:15px}
+footer{border-top:1px solid var(--line);padding:50px 0 28px;position:relative;overflow:hidden}
+.fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cols{display:flex;gap:70px}.cols h5{font-size:14px;font-weight:400;color:var(--mut);margin-bottom:18px}.cols a{display:block;margin-bottom:12px;font-size:17px}.cols a:hover{color:var(--ac)}
+.say{text-align:right}.say p{font-size:clamp(22px,2.8vw,36px);letter-spacing:-.03em}.say button{margin-top:16px;background:none;border:0;font-size:20px;text-decoration:underline;text-underline-offset:4px}
+.name{display:flex;justify-content:center;align-items:center;gap:1.2vw;font-size:clamp(70px,19vw,300px);font-weight:300;letter-spacing:-.04em;line-height:1;margin:60px 0 50px;user-select:none}
+.name:after{content:"";width:.2em;height:.2em;border-radius:50%;background:var(--fg);margin-top:.5em}
+.copy{display:flex;justify-content:space-between;color:var(--mut);font-size:15px}
+#fab{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:30;background:#fff;color:#000;border:0;border-radius:99px;padding:14px 22px;font-weight:500;box-shadow:0 10px 40px #0007}
+#chat{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(76px,calc(env(safe-area-inset-bottom) + 70px));z-index:31;width:min(400px,calc(100vw - 36px));height:min(560px,calc(100% - 140px));display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 80px #000a;opacity:0;transform:translateY(16px) scale(.97);pointer-events:none;transition:.35s cubic-bezier(.2,.7,.2,1)}
+#chat.open{opacity:1;transform:none;pointer-events:auto}
+.ch{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}.ch b{font-weight:500}.ch small{display:block;color:var(--mut);font-size:12px}.ch button{background:none;border:0;font-size:22px;color:var(--mut)}
+#msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:86%;padding:10px 14px;border-radius:16px;font-size:15px;white-space:pre-wrap;background:var(--line)}.m.u{align-self:flex-end;background:var(--fg);color:var(--bg)}
+.sug{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 10px}.sug button{border:1px solid var(--line);background:none;border-radius:99px;padding:6px 13px;font-size:13px}.sug button:hover{border-color:var(--fg)}
+#f{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}#f input{flex:1;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:99px;padding:11px 16px;font:inherit;font-size:15px}
+#f button{border:0;border-radius:50%;width:42px;height:42px;background:var(--fg);color:var(--bg)}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}nav ul{display:none}.row{grid-template-columns:1fr}.row em{text-align:left}.g,.edu{grid-template-columns:1fr}.say{text-align:left}.strip .w{gap:18px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#top">PRANJAL°</a>
+<ul><li><a href="#work">Work</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+<button class="pill" data-chat>Let's talk</button></div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div>
+<div class="avail">Available for internships and projects</div>
+<h1>I build <b>4+</b> AI products that see, read and talk, <b>from computer vision to full-stack apps.</b></h1>
+<p class="lead"><b>Pranjal Raj</b>, BTech AI/ML student at Bennett University. Python, PyTorch, React, Node.js, FastAPI, Docker. I turn machine learning ideas into deployed products.</p>
+<button class="cta" data-chat><i>→</i>Let's talk</button>
+</div>
+<div class="stack" id="stack" aria-hidden="true">
+<div class="sc"><h4>BlindNav</h4><div class="big">4s</div><p>Voice cue throttle</p><div class="bar"><i style="width:82%"></i></div><div class="bar"><i style="width:55%"></i></div><p>WiFi fingerprint + COCO-SSD</p></div>
+<div class="sc"><h4>HateMM</h4><div class="big">75.96%</div><p>Accuracy · AUROC 0.714</p><div class="bar"><i style="width:76%"></i></div><div class="bar"><i style="width:71%"></i></div><p>Image + text + OCR fusion</p></div>
+<div class="sc"><h4>Persona.ai</h4><div class="bub">Tell me about a project you led.</div><div class="bub r">I built a mock interview platform…</div><div class="bub">Great. What was the hardest part?</div></div>
+</div></div></header>
+
+<div class="strip"><div class="w"><div class="rate"><span>★★★★★</span><br>4 projects · live</div>
+<div class="mq" aria-hidden="true"><div><span>Python</span><span>PyTorch</span><span>React</span><span>FastAPI</span><span>TensorFlow</span><span>C++</span><span>OpenCV</span><span>Node.js</span><span>Python</span><span>PyTorch</span><span>React</span><span>FastAPI</span><span>TensorFlow</span><span>C++</span><span>OpenCV</span><span>Node.js</span></div></div></div></div>
+
+<section id="work" style="border:0"><div class="w">
+<h2>Four projects, from <b>mock interviews</b> to <b>hate speech detection.</b></h2>
+<article class="row"><div><h3>Persona.ai</h3><small>AI interview trainer</small></div><p>A full-stack mock interview platform with a UE5.7 MetaHuman avatar, real-time lip sync and multi-turn interview logic powered by Groq AI. Pixel Streaming brings the 3D interview into the browser with low latency. Frontend on Vercel, backend on Railway via Docker, data on Supabase.</p><em>React, Node.js, Groq AI, UE5, Python</em></article>
+<article class="row"><div><h3>BlindNav</h3><small>Hackaccino hackathon project</small></div><p>Indoor navigation for blind students using WiFi fingerprinting with a KNN classifier, plus real-time obstacle detection with a COCO-SSD TFLite model. Spoken cues are throttled to one every 4 seconds so guidance stays clear.</p><em>TypeScript, TFLite, expo-speech</em></article>
+<article class="row"><div><h3>HateMM</h3><small>Vision-language moderation</small></div><p>A 3-modality hate speech classifier (image, text and OCR text) trained on MMHS150K, 149,823 posts. A custom Cross-Modal Transformer with Modality-Gated Attention keeps fusion interpretable. A 3-phase pipeline fixed multimodal collapse and reached 75.96% accuracy and 0.714 AUROC.</p><em>PyTorch, ViT-B/16, RoBERTa</em></article>
+<article class="row"><div><h3>Meeting Transcription Platform</h3><small>Fireflies.ai clone</small></div><p>Transcribes and summarizes meetings from Google Meet, Zoom and Microsoft Teams, with AI summaries, action items and topic chapters from LLaMA-3.1 on Groq. Includes a synced transcript and audio player, PDF and Markdown export, and a local fallback during API outages.</p><em>React, Node.js, Groq API, Python</em></article>
+</div></section>
+
+<section id="skills"><div class="w"><h2>What I <b>work with.</b></h2><div class="g">
+<div><h3>Machine learning</h3><p>Regression, classification, clustering, ensemble methods, KNN, TF-IDF and cosine similarity with Scikit-learn, NLTK, NumPy and Pandas.</p></div>
+<div><h3>Deep learning</h3><p>CNNs, RNNs, LSTMs, Transformers and cross-modal attention in PyTorch, TensorFlow and TFLite, plus OpenCV vision pipelines.</p></div>
+<div><h3>Web and apps</h3><p>React, React Native, Node.js, HTML5 and REST APIs, with FastAPI and Streamlit for model-backed services.</p></div>
+<div><h3>Deployment</h3><p>Docker, Supabase, MySQL, Git and GitHub, Vercel and Railway. Python, C++ and SQL underneath it all.</p></div></div></div></section>
+
+<section id="about"><div class="w"><h2>Learning <b>in public,</b> shipping as I go.</h2>
+<div class="edu"><div><h3 style="font-weight:500;font-size:24px">Bennett University</h3><p>Greater Noida, Aug 2024 to May 2028</p></div><p>BTech in Computer Science Engineering with an AI/ML specialization. Strong base in data structures and algorithms in C++ and Python, and a focus on turning complex ML concepts into working, deployed products.</p></div>
+<div class="edu"><div><h3 style="font-weight:500;font-size:24px">Certifications</h3></div><div class="chips"><span>Claude in Amazon Bedrock, Anthropic</span><span>Introduction to MCP, Anthropic</span><span>Computer Networks, Coursera</span><span>Operating Systems, Coursera</span><span>Design Thinking and Innovation, Coursera</span></div></div></div></section>
+
+<footer id="contact"><div class="w">
+<div class="fg"><div class="cols"><div><h5>Links</h5><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About me</a></div>
+<div><h5>© LINKS °</h5><a href="https://github.com/PranjalRajputt">Github</a><a href="https://linkedin.com/in/pranjal--raj">Linkedin</a><a href="mailto:pranjalraj50@gmail.com">Email</a></div></div>
+<div class="say"><p>Let's build together. Waiting to connect.</p><button data-chat>Talk to my AI</button></div></div>
+<div class="name" aria-label="Pranjal">PRANJAL</div>
+<div class="copy"><span>©2026</span><span>Pranjal Raj · AI/ML &amp; Full-Stack Developer</span></div></div></footer>
+
+<div id="chat" role="dialog" aria-label="Chat with Pranjal's AI assistant"><div class="ch"><div><b>Ask about Pranjal</b><small>AI assistant · answers from his resume</small></div><button id="x" aria-label="Close">×</button></div>
+<div id="msgs"></div><div class="sug" id="sug"><button>What has he built?</button><button>What's his tech stack?</button><button>How can I contact him?</button></div>
+<form id="f" onsubmit="return false"><input id="in" placeholder="Ask anything…" autocomplete="off"><button id="go" aria-label="Send">↑</button></form></div>
+
+<script>
+const $=s=>document.querySelector(s),chat=$('#chat'),msgs=$('#msgs'),inp=$('#in');
+const CTX=`You are the AI assistant on Pranjal Raj's portfolio. Answer visitors in 1-4 short, friendly sentences, only from these facts; if unknown, say so and suggest emailing pranjalraj50@gmail.com. Never invent employers, dates or numbers.
+Pranjal Raj: BTech CSE (AI/ML specialization) at Bennett University, Greater Noida, Aug 2024-May 2028. Strong in DSA (C++, Python). Email pranjalraj50@gmail.com, GitHub github.com/PranjalRajputt, LinkedIn linkedin.com/in/pranjal--raj.
+Skills: Python, C++, SQL; Scikit-learn, TensorFlow, PyTorch, OpenCV, NLTK, TFLite, NumPy, Pandas; CNN, RNN, LSTM, Transformers, cross-modal attention; React, React Native, Node.js, REST APIs; FastAPI, Streamlit, Supabase, Docker, Git; Vercel, Railway, MySQL.
+Projects: Persona.ai (AI mock interview platform, UE5.7 MetaHuman avatar, lip sync, Groq AI, Pixel Streaming, Vercel+Railway+Docker+Supabase). BlindNav (Hackaccino hackathon; indoor navigation for blind students via WiFi fingerprinting, KNN, COCO-SSD TFLite obstacle detection, TTS cues every 4s). HateMM (3-modality hate speech classifier on MMHS150K, 149,823 posts, Cross-Modal Transformer with Modality-Gated Attention, 3-phase training, 75.96% accuracy, AUROC 0.714). Meeting Transcription Platform (Fireflies.ai clone for Meet/Zoom/Teams, Groq LLaMA-3.1-8b-instant summaries, action items, chapters, synced player, PDF/Markdown export).
+Certifications: Claude in Amazon Bedrock and Intro to MCP (Anthropic); Computer Networks, Operating Systems, Design Thinking & Innovation (Coursera).`;
+let hist=[],busy=false,sample=null,ready=false;
+function add(t,u){const d=document.createElement('div');d.className='m'+(u?' u':'');d.textContent=t;msgs.appendChild(d);msgs.scrollTop=1e9;return d}
+function openChat(){chat.classList.add('open');if(!msgs.children.length)add("Hi! I'm Pranjal's AI assistant. Ask me about his projects, skills or how to reach him.");setTimeout(()=>inp.focus(),300);
+ if(!ready){ready=true;try{(window.claude?claude.use('sample'):Promise.resolve(null)).then(s=>sample=s).catch(()=>{})}catch(e){}}}
+document.querySelectorAll('[data-chat]').forEach(b=>b.onclick=openChat);$('#x').onclick=()=>chat.classList.remove('open');
+function fallback(q){q=q.toLowerCase();
+ if(/contact|email|reach|hire/.test(q))return"Email pranjalraj50@gmail.com, or find him on GitHub (PranjalRajputt) and LinkedIn (pranjal--raj).";
+ if(/stack|skill|tech|language/.test(q))return"Python, C++, SQL; PyTorch, TensorFlow, OpenCV, Scikit-learn; React, React Native, Node.js, FastAPI; Docker and Supabase for deployment.";
+ if(/project|built|work/.test(q))return"Four projects: Persona.ai (AI interview trainer), BlindNav (indoor navigation for blind students), HateMM (multimodal hate speech classifier) and a Meeting Transcription Platform.";
+ return"I can answer questions about Pranjal's projects, skills, education and contact details. For anything else, email pranjalraj50@gmail.com."}
+async function send(q){q=q.trim();if(!q||busy)return;busy=true;inp.value='';$('#sug').style.display='none';add(q,1);hist.push({role:'user',content:q});
+ const el=add('Thinking…');let out='';
+ try{if(!sample)throw 0;
+  const r=await sample([{role:'user',content:CTX+'\n\nConversation so far will follow.'},{role:'assistant',content:'Understood.'},...hist],{cache:false,modelTier:'quick',onText:({text})=>{el.textContent=text;msgs.scrollTop=1e9}});
+  out=r.text}catch(e){out=fallback(q);el.textContent=out}
+ el.textContent=out;hist.push({role:'assistant',content:out});busy=false;msgs.scrollTop=1e9}
+$('#f').addEventListener('submit',e=>{e.preventDefault();send(inp.value)});$('#go').onclick=()=>send(inp.value);
+document.querySelectorAll('#sug button').forEach(b=>b.onclick=()=>send(b.textContent));
+const st=$('#stack');st.parentElement.addEventListener('pointermove',e=>{const r=st.getBoundingClientRect();st.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*14+'deg');st.style.setProperty('--rx',((e.clientY-r.top)/r.height-.5)*-10+'deg')});
+</script>
+</body>
+</html>
